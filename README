@@ -1,4 +1,4 @@
-README for pMARS version 0.9.0 - portable corewar system with ICWS'94 extensions
+README for pMARS version 0.9.3 - portable corewar system with ICWS'94 extensions
 
 ____________________
 What is Core War?
@@ -171,5 +171,3 @@ Language support
     native tongue, translate the strings and send the file to us. We will then
     include the new str_???.c in the next release and might even release the
     foreign language binaries.
-
-$Id: README,v 1.1.1.1 2000/08/31 10:22:56 iltzu Exp $

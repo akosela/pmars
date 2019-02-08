@@ -14,4 +14,6 @@ Authors
     (00ncsummers@bsuvc.bsu.edu) ported pMARS to VMS. Ken Espiritu provided
     an optimized version of sim.c which runs fast on x86 machines. Ilmari
     Karonen (iltzu@sci.fi) added the -P option and various improvements.
+    Andy Kosela (akosela@andykosela.com) cleaned up Makefile and fixed
+    various compiling errors on modern (2019) versions of gcc.
 
