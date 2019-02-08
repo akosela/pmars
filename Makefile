@@ -1,5 +1,5 @@
 # generic UNIX makefile
-CC = gcc			# req. for linux
+CC = gcc				# req. for linux
 #CC = cc				# if you don't have gcc
 # Configuration options:
 #
@@ -18,7 +18,9 @@ CC = gcc			# req. for linux
 
 PREFIX = /usr
 MAN_PREFIX = /usr/share
+CFLAGS = -O -DEXT94 -DGRAPHX -DPERMUTATE
 LFLAGS = -x
+LIB = -lvgagl -lvga
 
 .SUFFIXES: .o .c .c~ .man .doc .6
 SRC = src
@@ -65,18 +67,25 @@ xwin:	LIB = -L/usr/X11R6/lib -lX11
 xwin:	$(MAINFILE)
 
 clean:
-	rm -f $(OBJ1) $(OBJ2) $(OBJ3) $(SRC)/core $(SRC)/pmars
+	rm -f $(SRC)/*.o $(SRC)/core $(SRC)/pmars
 
 install:
 	install -d $(PREFIX)/bin
 	install -d $(MAN_PREFIX)/man/man6
+	install -d $(PREFIX)/share/pmars/config
+	install -d $(PREFIX)/share/pmars/doc
+	install -d $(PREFIX)/share/pmars/warriors
 	install -c -m 755 $(MAINFILE) $(PREFIX)/bin
 	install -c -m 644 doc/pmars.6 $(MAN_PREFIX)/man/man6
+	install -c -m 644 config/* $(PREFIX)/share/pmars/config
+	install -c -m 644 doc/* $(PREFIX)/share/pmars/doc
+	install -c -m 644 warriors/* $(PREFIX)/share/pmars/warriors
 	gzip $(MAN_PREFIX)/man/man6/pmars.6
 
 uninstall:
 	rm -f $(PREFIX)/bin/pmars
 	rm -f $(MAN_PREFIX)/man/man6/pmars.6.gz
+	rm -rf $(PREFIX)/share/pmars
 
 help:
 	@echo
