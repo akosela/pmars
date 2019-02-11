@@ -1,7 +1,7 @@
 2019-02-08	Andy Kosela	<akosela@andykosela.com>
 
 	- Release 0.9.3
-	- Clean Makefile.
+	- Clean up Makefile.
 	- Fix various compiling errors on modern versions of gcc.
 
 2000-12-25	Ilmari Karonen	<iltzu@sci.fi>
