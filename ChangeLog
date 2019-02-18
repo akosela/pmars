@@ -2,6 +2,7 @@
 
 	- Release 0.9.3
 	- Clean up Makefile.
+	- Clean up docs.
 	- Fix various compiling errors on modern versions of gcc.
 
 2000-12-25	Ilmari Karonen	<iltzu@sci.fi>

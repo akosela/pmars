@@ -125,11 +125,11 @@ Platforms
             lrwxrwxrwx   1 root     root        5 Mar  2 00:22 mouse -> ttyS0
         * The second digit of the the argument to -v indicates (just like in
             the DOS version) the graphics mode:
-            1 ... 640x480 with 256 colors
-            2 ... 800x600 with 256 colors
-            3 ...1024x768 with 256 colors
-            6 ... 320x200 with 256 colors
-            all other digits will result in the 640x480x256 mode.
+            1 ... 640x480 with 256 colors (SVGA)
+            2 ... 800x600 with 256 colors (SVGA)
+            3 ...1024x768 with 256 colors (SVGA)
+            6 ... 320x200 with 256 colors (VGA)
+            all other digits will result in the 320x200x256 mode.
 
         Deficiencies/bugs of the Linux/SVGA version:
         * Currently, the following keys are recognized by pMARS: F1-F10, the

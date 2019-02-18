@@ -1142,15 +1142,16 @@ with the draft.
 .I pMARSv
 is a DOS version of
 .I pMARS
-with a graphical core display. You can chose between EGA/VGA graphics
+with a graphical core display. You can chose between VGA/SVGA graphics
 or text mode with the
 .I -v
 command line options or by pressing 'v' during the game. The
 .I -v
 option takes a three digit argument 'xyz'. Digit 'x' specifies the initial
 display speed and ranges from 0 (fastest) to 7 (slowest). 'y' is the initial
-display mode: 0 for text mode, 1 for standard VGA graphics,
-2 and 3 for SVGA, 4 and 5 for EGA, and 6 for CGA graphics.
+display mode: 0 for text mode, 1 for standard SVGA (640x480x256) graphics,
+2 for SVGA (800x600x256), 3 for SVGA (1024x768x256), and 6 for VGA
+(320x200x256) graphics.
 .PP
 The display level 'z' specifies how much is displayed:
 .TP

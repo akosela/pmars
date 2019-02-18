@@ -1099,9 +1099,9 @@ svga_open_graphics()
     gMode = G320x200x256;
     break;
   default:
-    xsize = 640;
-    ysize = 480;
-    gMode = G640x480x256;
+    xsize = 320;
+    ysize = 200;
+    gMode = G320x200x256;
     break;
   }
 
